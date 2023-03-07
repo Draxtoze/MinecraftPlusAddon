@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Minecraft Plus",
+		"description": "pack.description",
+		"uuid": "9c7eb4e4-39ae-45ec-b03c-f6f644c983a0",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e2782414-79c8-45b8-9412-7188fc34d38a",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+		  "uuid": "375dd93c-7449-41c4-859f-fa2fce76c047",
+		  "version": [1, 0, 0]
+		}
+	  ]	  
+}
