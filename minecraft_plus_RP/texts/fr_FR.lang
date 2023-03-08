@@ -1,4 +1,12 @@
-item.mcplus:bronze_ingot=Lingot de Bronze
-tile.mcplus:bronze_ore.name=Minerais de Bronze
+// Items
+item.mcplus:bronze_ingot=Lingot de §0Bronze
+item.mcplus:bronze_helmet=Casque en §0Bronze
+item.mcplus:bronze_chestplate=Plastron en §0Bronze
+item.mcplus:bronze_leggings=Pantalon en §0Bronze
+item.mcplus:bronze_boots=Bottes en §0Bronze
+item.mcplus:bronze_sword=Épée en §0Bronze
+// Blocks
+tile.mcplus:bronze_ore.name=Minerais de §0Bronze
+// UI / text
 pack.name=Minecraft Plus Addon
 pack.description=Minecraft Plus Addon containing multiple ores and armors

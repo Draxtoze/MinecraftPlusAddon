@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mcplus:bronze_helmet"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            "eee",
+            "e e", 
+            "   "
+        ],
+		"key": {
+			"e": {
+				"item": "mcplus:bronze_ingot"
+			}
+		},
+		"result": {
+			"item": "mcplus:bronze_helmet"
+		}
+	}
+}

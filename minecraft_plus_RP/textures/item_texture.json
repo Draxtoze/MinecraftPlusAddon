@@ -4,6 +4,21 @@
 	"texture_data": {
 		"bronze_ingot": {
 			"textures": "textures/items/bronze_ingot"
+		},
+		"bronze_boots": {
+			"textures": "textures/items/bronze_boots"
+		},
+		"bronze_chestplate": {
+			"textures": "textures/items/bronze_chestplate"
+		},
+		"bronze_helmet": {
+			"textures": "textures/items/bronze_helmet"
+		},
+		"bronze_leggings": {
+			"textures": "textures/items/bronze_leggings"
+		},
+		"bronze_sword": {
+			"textures": "textures/items/bronze_sword"
 		}
 	}
 }

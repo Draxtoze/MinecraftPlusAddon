@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mcplus:bronze_sword"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            " e ",
+            " e ", 
+            " / "
+        ],
+		"key": {
+			"/": {
+				"item": "minecraft:stick"
+			},
+			"e": {
+				"item": "mcplus:bronze_ingot"
+			}
+		},
+		"result": {
+			"item": "mcplus:bronze_sword"
+		}
+	}
+}
