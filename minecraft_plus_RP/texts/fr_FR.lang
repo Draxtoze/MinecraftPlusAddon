@@ -5,6 +5,10 @@ item.mcplus:bronze_chestplate=Plastron en §0Bronze
 item.mcplus:bronze_leggings=Pantalon en §0Bronze
 item.mcplus:bronze_boots=Bottes en §0Bronze
 item.mcplus:bronze_sword=Épée en §0Bronze
+item.mcplus:bronze_pickaxe=Pioche en §0Bronze
+item.mcplus:spawner_core=Core de Spawner
+item.mcplus:spawner_fragment=Fragment de Spawner
+item.mcplus:mob_soul=Ame de Monstre
 // Blocks
 tile.mcplus:bronze_ore.name=Minerais de §0Bronze
 // UI / text

@@ -19,6 +19,18 @@
 		},
 		"bronze_sword": {
 			"textures": "textures/items/bronze_sword"
+		},
+		"bronze_pickaxe": {
+			"textures": "textures/items/bronze_pickaxe"
+		},
+		"spawner_core": {
+			"textures": "textures/items/spawner_core"
+		},
+		"spawner_fragment": {
+			"textures": "textures/items/spawner_fragment"
+		},
+		"mob_soul": {
+			"textures": "textures/items/mob_soul"
 		}
 	}
 }
