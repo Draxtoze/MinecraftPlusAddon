@@ -22,15 +22,11 @@
 			},
 			"minecraft:weapon": {
 				"on_hurt_entity": {
-					"event": "mcplus:durability"
+					"event": "durability_update"
 				}
 			},
 			"minecraft:durability": {
-				"max_durability": 600,
-				"damage_chance": {
-					"min": 1,
-					"max": 2
-				}
+				"max_durability": 600
 			},
             "minecraft:digger": {
 				"use_efficiency": true,
@@ -41,18 +37,32 @@
 						},
 						"speed": 16,
 						"on_dig": {
-							"event": "mcplus:durability"
+							"event": "durability_update"
 						}
 					}
                 ]
             },
             "events": {
-                "mcplus:durability": {
-                    "damage": {
-                        "type": "durability",
-                        "amount": 1
-                    }
-                }
+                "durability_update":{
+					"sequence":[
+					   {
+						  "sequence":[
+							 {
+								"damage":{
+								   "type":"durability",
+								   "amount":1,
+								   "target":"self"
+								}
+							 },
+							 {
+								"run_command":{
+								   "target":"holder"
+								}
+							 }
+						  ]
+					   }
+					]
+				 }
             }
         }
     }
