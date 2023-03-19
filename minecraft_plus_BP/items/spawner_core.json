@@ -7,7 +7,7 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "spawner_fragment"
+				"texture": "spawner_core"
 			},
 			"minecraft:hand_equipped": false,
 			"minecraft:foil": false,
