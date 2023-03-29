@@ -9,26 +9,12 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:mining_speed": 16,
-			"minecraft:damage": 4,
+			"minecraft:damage": 5,
 			"minecraft:enchantable": {
 				"value": 10,
 				"slot": "pickaxe"
 			},
-            "minecraft:icon": {
-				"texture": "bronze_pickaxe"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.pickaxe"
-			},
-			"minecraft:weapon": {
-				"on_hurt_entity": {
-					"event": "durability_update"
-				}
-			},
-			"minecraft:durability": {
-				"max_durability": 600
-			},
-            "minecraft:digger": {
+			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
 					{
@@ -37,33 +23,1598 @@
 						},
 						"speed": 16,
 						"on_dig": {
-							"event": "durability_update"
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": {
+							"tags": "(query.any_tag('blockoresplus'))"
+						},
+						"speed": 55,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": {
+							"tags": "(query.any_tag('mesaoresplus'))"
+						},
+						"speed": 35,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": {
+							"tags": "(query.any_tag('oresoresplus'))"
+						},
+						"speed": 33,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blackstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_polished_blackstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cracked_polished_blackstone_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:gilded_blackstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_double_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_double_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_double_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_pressure_plate",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_button",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:crying_obsidian",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:obsidian",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:netherite_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:emerald_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:quartz_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:nether_gold_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:diamond_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:emerald_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coal_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lapis_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:redstone_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stonebrick",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:end_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:prismarine",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:purpur_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:quartz_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:quartz_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smooth_stone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_nether_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cracked_nether_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:bone_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:concrete",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:honeycomb_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:packed_ice",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blue_ice",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:ancient_debris",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:netherrack",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:magma",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:mob_spawner",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:shulker_box",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:undyed_shulker_box",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:basalt",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_basalt",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:crimson_nylium",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:warped_nylium",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_fan",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_fan_dead",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_fan_hang",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_fan_hang2",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coral_fan_hang3",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:purple_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:white_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:orange_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:magenta_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:light_blue_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:yellow_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lime_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:pink_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:gray_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:silver_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cyan_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blue_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:brown_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:green_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:red_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:black_glazed_terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:terracotta",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lantern",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:soul_lantern",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:grindstone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:anvil",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:respawn_anchor",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smoker",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lit_smoker",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:beacon",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:conduit",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:bell",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stonecutter",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:enchanting_table",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:furnace",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lit_furnace",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:blast_furnace",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lit_blast_furnace",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:observer",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:chain",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:dispenser",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:dropper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:hopper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stonecutter_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab2",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab3",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_sla 16",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:double_stone_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:double_stone_slab3",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:double_stone_slab2",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:double_stone_sla 16",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:stone_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:sandstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:quartz_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:purpur_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_bricks_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:dark_prismarine_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:granite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:diorite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_granite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:andesite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_diorite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:mossy_stone_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smooth_red_sandstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smooth_sandstone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:end_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:mossy_cobblestone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:normal_stone_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smooth_quartz_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_andesite_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:brewing_stand",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lodestone",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:iron_door",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:iron_bars",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:iron_trapdoor",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:golden_rail",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:detector_rail",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:rail",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:activator_rail",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_fence",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:respawn_anchor",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:smooth_basalt",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:calcite",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:tuff",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:amethyst_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:budding_amethyst",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:dripstone_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:copper_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:copper_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_copper_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:exposed_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:weathered_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_lapis_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tiles",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_deepslate",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_bricks",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_tiles",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_slab",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_stairs",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_wall",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:diamond_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:redstone_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:iron_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:lapis_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
+						}
+					},
+					{
+						"block": "minecraft:coal_ore",
+						"speed": 16,
+						"on_dig": {
+							"event": "mcplus:durability"
 						}
 					}
-                ]
-            },
-            "events": {
-                "durability_update":{
-					"sequence":[
-					   {
-						  "sequence":[
-							 {
-								"damage":{
-								   "type":"durability",
-								   "amount":1,
-								   "target":"self"
-								}
-							 },
-							 {
-								"run_command":{
-								   "target":"holder"
-								}
-							 }
-						  ]
-					   }
-					]
-				 }
-            }
-        }
-    }
+				],
+				"on_dig": {
+					"event": "mcplus:durability",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {},
+			"minecraft:durability": {
+				"max_durability": 600
+			},
+			"minecraft:icon": {
+				"texture": "bronze_pickaxe"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "mcplus:durability"
+				}
+			}
+		},
+		"events": {
+			"mcplus:durability": {
+				"damage": {
+					"type": "durability",
+					"amount": 1
+				}
+			}
+		}
+	}
 }

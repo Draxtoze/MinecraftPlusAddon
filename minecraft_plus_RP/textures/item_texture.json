@@ -31,6 +31,18 @@
 		},
 		"mob_soul": {
 			"textures": "textures/items/mob_soul"
+		},
+		"bronze_axe": {
+			"textures": "textures/items/bronze_axe"
+		},
+		"bronze_hoe": {
+			"textures": "textures/items/bronze_hoe"
+		},
+		"bronze_shovel": {
+			"textures": "textures/items/bronze_shovel"
+		},
+		"farmers_basket": {
+			"textures": "textures/items/farmers_basket"
 		}
 	}
 }

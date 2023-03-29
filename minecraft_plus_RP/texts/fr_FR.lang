@@ -9,6 +9,10 @@ item.mcplus:bronze_pickaxe=Pioche en §0Bronze
 item.mcplus:spawner_core=Core de Spawner
 item.mcplus:spawner_fragment=Fragment de Spawner
 item.mcplus:mob_soul=Ame de Monstre
+item.mcplus:bronze_hoe=Houe en §0Bronze
+item.mcplus:bronze_shovel=Pelle en §0Bronze
+item.mcplus:bronze_axe=Hache en §0Bronze
+item.mcplus:farmers_basket=Panier du Fermier
 // Blocks
 tile.mcplus:bronze_ore.name=Minerais de §0Bronze
 // UI / text
