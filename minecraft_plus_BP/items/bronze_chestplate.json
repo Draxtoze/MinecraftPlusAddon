@@ -23,8 +23,10 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["mcplus:bronze_ingot"],
-						"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+						"repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability",
+						"items": [
+							"mcplus:bronze_ingot"
+						]
 					}
 				]
 			},

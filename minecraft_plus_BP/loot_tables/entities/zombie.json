@@ -26,7 +26,7 @@
                 },
                 {"type":"item",
                 "name": "mcplus:mob_soul",
-                "weight": 5,
+                "weight": 1,
                 "functions": [
                   {
                     "function": "set_count",

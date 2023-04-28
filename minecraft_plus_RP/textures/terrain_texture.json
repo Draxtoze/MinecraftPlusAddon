@@ -6,6 +6,15 @@
 	"texture_data": {
         "bronze_ore": {
             "textures": "textures/blocks/bronze_ore"
-        }
+        },
+		"farmer_lucky_block": {
+			"textures": "textures/blocks/farmer_lucky_block"
+		},
+		"jakanda_log": {
+			"textures": "textures/blocks/jakanda_log"
+		},
+		"jakanda_log_top": {
+			"textures": "textures/blocks/jakanda_log_top"
+		}
     }
 }

@@ -3,5 +3,17 @@
     "mcplus:bronze_ore": {
     "textures": "bronze_ore",
     "sound": "stone"
+    },
+    "mcplus:farmer_lucky_block": {
+        "textures": "farmer_lucky_block",
+        "sound": "wood"
+    },
+    "mcplus:jakanda_log": {
+        "textures": {
+            "up": "jakanda_log_top",
+            "down": "jakanda_log_top",
+            "side": "jakanda_log"    
+        },
+        "sound": "wood"
     }
 }
