@@ -15,5 +15,15 @@
             "side": "jakanda_log"    
         },
         "sound": "wood"
+    },
+    "mcplus:jakanda_leaves": {
+        "sound": "grass"
+    },
+    "mcplus:jakanda_sappling": {
+        "textures": "jakanda_sappling",
+        "sound": "grass"    
+    },
+    "jakanda_stripped_log": {
+        "sound": "wood"
     }
 }

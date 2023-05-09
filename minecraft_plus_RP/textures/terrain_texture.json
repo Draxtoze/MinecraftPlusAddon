@@ -15,6 +15,18 @@
 		},
 		"jakanda_log_top": {
 			"textures": "textures/blocks/jakanda_log_top"
+		},
+		"jakanda_leaves": {
+			"textures": "textures/blocks/jakanda_leaves"
+		},
+		"jakanda_sappling": {
+			"textures": "textures/blocks/jakanda_sappling"
+		},
+		"jakanda_stripped_log": {
+			"textures": "textures/blocks/jakanda_stripped_log"
+		},
+		"jakanda_stripped_log_top": {
+			"textures": "textures/blocks/jakanda_stripped_log_top"
 		}
     }
 }

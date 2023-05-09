@@ -13,10 +13,19 @@ item.mcplus:bronze_hoe=Houe en §0Bronze
 item.mcplus:bronze_shovel=Pelle en §0Bronze
 item.mcplus:bronze_axe=Hache en §0Bronze
 item.mcplus:farmers_basket=Panier du Fermier
+item.mcplus:fluorite_pickaxe=Pioche en Fluorite
+item.mcplus:fluorite_sword=Épée en Fluorite
+item.mcplus:fluorite_axe=Hache en Fluorite
+item.mcplus:fluorite_hoe=Houe en Fluorite
+item.mcplus:fluorite_shovel=Pelle en Fluorite
+item.mcplus:jakanda_sappling_placer=Pousse de Jakanda
+item.mcplus:fluorite_ingot=Lingot en Fluorite
 // Blocks
 tile.mcplus:bronze_ore.name=Minerais de §0Bronze
 tile.mcplus:farmer_lucky_block.name=Lucky Block du Fermier
 tile.mcplus:jakanda_log.name=Bois de Jakanda
+tile.mcplus:jakanda_stripped_log.name=Bois de Jakanda écorcé
+tile.mcplus:jakanda_leaves.name=Feuilles de Jakanda
 // UI / text
 pack.name=Minecraft Plus Addon
 pack.description=Minecraft Plus Addon containing multiple ores and armors

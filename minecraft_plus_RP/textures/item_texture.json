@@ -43,6 +43,27 @@
 		},
 		"farmers_basket": {
 			"textures": "textures/items/farmers_basket"
+		},
+		"fluorite_pickaxe": {
+            "textures": "textures/items/fluorite_pickaxe"
+        },
+          "fluorite_sword": {
+            "textures": "textures/items/fluorite_sword"
+        },
+          "fluorite_hoe": {
+            "textures": "textures/items/fluorite_hoe"
+        },
+          "fluorite_axe": {
+            "textures": "textures/items/fluorite_axe"
+        },
+          "fluorite_shovel": {
+            "textures": "textures/items/fluorite_shovel"
+        },
+		"jakanda_sappling_placer": {
+			"textures": "textures/items/jakanda_sappling_placer"
+		},
+		"fluorite_ingot": {
+			"textures": "textures/items/fluorite_ingot"
 		}
-	}
+	}	
 }
