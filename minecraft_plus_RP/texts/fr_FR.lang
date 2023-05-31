@@ -20,6 +20,7 @@ item.mcplus:fluorite_hoe=Houe en Fluorite
 item.mcplus:fluorite_shovel=Pelle en Fluorite
 item.mcplus:jakanda_sappling_placer=Pousse de Jakanda
 item.mcplus:fluorite_ingot=Lingot en Fluorite
+item.mcplus:obsidian_breaker=Pioche à Obsidienne
 // Blocks
 tile.mcplus:bronze_ore.name=Minerais de §0Bronze
 tile.mcplus:farmer_lucky_block.name=Lucky Block du Fermier

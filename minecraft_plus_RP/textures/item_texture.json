@@ -64,6 +64,9 @@
 		},
 		"fluorite_ingot": {
 			"textures": "textures/items/fluorite_ingot"
+		},
+		"obsidian_breaker": {
+			"textures": "textures/items/obsidian_breaker"
 		}
 	}	
 }
