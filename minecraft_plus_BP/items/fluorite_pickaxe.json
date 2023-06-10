@@ -19,7 +19,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "(query.any_tag('stone','metal','cobblestone','bricks','diamond_pick_diggable'))"
+							"tags": "(query.any_tag('stone','metal','cobblestone','bricks','diamond_pick_diggable','mcplus:custom_ore'))"
 						},
 						"speed": 20,
 						"on_dig": {

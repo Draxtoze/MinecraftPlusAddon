@@ -1,0 +1,135 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "conditions": [
+				{
+					"condition": "match_tool",
+					"item": [
+						"mcplus:bronze_pickaxe",
+						"mcplus:fluorite_pickaxe",
+						"minecraft:iron_pickaxe",
+						"minecraft:diamond_pickaxe",
+						"minecraft:netherite_pickaxe"
+					],
+					"count": 1
+				}
+			],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mcplus:bronze_ingot",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:aluminium",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:calcium",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:fluor",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:magnesium",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:samarium",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:silicium",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mcplus:yttrium",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_nugget",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

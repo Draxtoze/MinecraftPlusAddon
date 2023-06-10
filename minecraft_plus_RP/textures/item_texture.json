@@ -67,6 +67,27 @@
 		},
 		"obsidian_breaker": {
 			"textures": "textures/items/obsidian_breaker"
+		},
+		"samarium": {
+			"textures": "textures/items/samarium"
+		},
+		"aluminium": {
+			"textures": "textures/items/aluminium"
+		},
+		"yttrium": {
+			"textures": "textures/items/yttrium"
+		},
+		"silicium": {
+			"textures": "textures/items/silicium"
+		},
+		"magnesium": {
+			"textures": "textures/items/magnesium"
+		},
+		"fluor": {
+			"textures": "textures/items/fluor"
+		},
+		"calcium": {
+			"textures": "textures/items/calcium"
 		}
 	}	
 }

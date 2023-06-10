@@ -27,6 +27,9 @@
 		},
 		"jakanda_stripped_log_top": {
 			"textures": "textures/blocks/jakanda_stripped_log_top"
+		},
+		"random_ore": {
+			"textures": "textures/blocks/random_ore"
 		}
     }
 }

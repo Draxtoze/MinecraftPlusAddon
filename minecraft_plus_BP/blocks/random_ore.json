@@ -2,7 +2,7 @@
 	"format_version": "1.12.0",
 	"minecraft:block": {
 		"description": {
-			"identifier": "mcplus:bronze_ore",
+			"identifier": "mcplus:random_ore",
 			"is_experimental": true,
 			"register_to_creative_menu": true,
             "menu_category": {
@@ -11,7 +11,7 @@
 			}
 		},
 		"components": {
-			"minecraft:loot": "loot_tables/blocks/bronze_ore.json",
+			"minecraft:loot": "loot_tables/blocks/random_ore.json",
 			"minecraft:destroy_time": 3,
 			"minecraft:explosion_resistance": 1,
 			"minecraft:friction": 0.6,
@@ -23,12 +23,24 @@
 			"minecraft:block_light_absorption": 0,
 			"tag:mcplus:custom_ore": {},
 			"minecraft:on_player_destroyed": {
-				"event": "xp_reward"
+				"event": "mcplus:xp_reward"
 			}
 		},
 		"events": {
-			"xp_reward": {
+			"mcplus:xp_reward": {
 				"randomize": [
+					{
+						"weight": 1,
+							"run_command": {
+								"command": [
+									"summon xp_orb ~~~",
+									"summon xp_orb ~~~",
+									"summon xp_orb ~~~",
+									"summon xp_orb ~~~",
+									"summon xp_orb ~~~"
+								]
+						}
+					},
 					{
 						"weight": 1,
 							"run_command": {

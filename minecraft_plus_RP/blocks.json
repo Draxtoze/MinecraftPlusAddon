@@ -1,8 +1,10 @@
 {
-	"format_version": [1, 1, 0],
+    "format_version": [
+        1,1,0
+    ],
     "mcplus:bronze_ore": {
-    "textures": "bronze_ore",
-    "sound": "stone"
+        "textures": "bronze_ore",
+        "sound": "stone"
     },
     "mcplus:farmer_lucky_block": {
         "textures": "farmer_lucky_block",
@@ -12,7 +14,7 @@
         "textures": {
             "up": "jakanda_log_top",
             "down": "jakanda_log_top",
-            "side": "jakanda_log"    
+            "side": "jakanda_log"
         },
         "sound": "wood"
     },
@@ -21,9 +23,13 @@
     },
     "mcplus:jakanda_sappling": {
         "textures": "jakanda_sappling",
-        "sound": "grass"    
+        "sound": "grass"
     },
     "jakanda_stripped_log": {
         "sound": "wood"
+    },
+    "mcplus:random_ore": {
+        "textures": "random_ore",
+        "sound": "stone"
     }
 }

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "mcplus:fluorite_ingot"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+            "abc",
+            "dhe", 
+            "fgi"
+        ],
+		"key": {
+			"a": {
+				"item": "mcplus:aluminium"
+			},
+			"b": {
+				"item": "mcplus:calcium"
+			},
+			"c": {
+				"item": "mcplus:fluor"
+			},
+			"d": {
+				"item": "mcplus:magnesium"
+			},
+			"e": {
+				"item": "mcplus:samarium"
+			},
+			"f": {
+				"item": "mcplus:silicium"
+			},
+			"g": {
+				"item": "mcplus:yttrium"
+			},
+			"h": {
+				"item": "minecraft:gold_block"
+			},
+			"i": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"result": {
+			"item": "mcplus:fluorite_ingot"
+		}
+	}
+}

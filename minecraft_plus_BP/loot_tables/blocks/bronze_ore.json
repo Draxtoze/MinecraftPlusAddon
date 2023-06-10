@@ -1,21 +1,26 @@
 {
-    "pools": [
-    
-        {
-            "rolls": 1,
-            "entries": [
-                {
-            "type": "item",
-            "name": "mcplus:bronze_ingot",
-            "weight": 1,
-            "functions": [
-                        {
-                    "function": "set_count",
-                    "count": 1
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": [
+						"mcplus:bronze_pickaxe",
+						"mcplus:fluorite_pickaxe",
+						"minecraft:iron_pickaxe",
+						"minecraft:diamond_pickaxe",
+						"minecraft:netherite_pickaxe"
+					],
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "mcplus:bronze_ingot"
+				}
+			]
+		}
+	]
 }
