@@ -35,6 +35,7 @@ tile.mcplus:jakanda_log.name=Bois de Jakanda
 tile.mcplus:jakanda_stripped_log.name=Bois de Jakanda écorcé
 tile.mcplus:jakanda_leaves.name=Feuilles de Jakanda
 tile.mcplus:random_ore.name=Random Ore
+tile.mcplus:purifier.name=Purificateur
 // UI / text
 pack.name=Minecraft Plus Addon
 pack.description=Minecraft Plus Addon containing multiple ores and armors

@@ -6,7 +6,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:ender_pearl",
-                    "weight": 20,
+                    "weight": 90,
                     "functions": [
                         {
                             "function": "set_count",

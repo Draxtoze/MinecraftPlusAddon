@@ -2,7 +2,7 @@
 	"format_version": "1.12.0",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "mcplus:fluorite_ingot"
+			"identifier": "mcplus:unpure_fluorite_ingot"
 		},
 		"tags": ["crafting_table"],
 		"pattern": [
@@ -40,7 +40,7 @@
 			}
 		},
 		"result": {
-			"item": "mcplus:fluorite_ingot"
+			"item": "mcplus:unpure_fluorite_ingot"
 		}
 	}
 }

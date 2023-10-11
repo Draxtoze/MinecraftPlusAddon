@@ -30,6 +30,9 @@
 		},
 		"random_ore": {
 			"textures": "textures/blocks/random_ore"
+		},
+		"purifier": {
+			"textures": "textures/blocks/purifier"
 		}
     }
 }

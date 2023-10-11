@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+      "description": {
+        "identifier": "mcplus:purifier",
+        "menu_category": {
+          "category": "construction",
+          "group": "itemGroup.name.concrete",
+          "is_hidden_in_commands": false
+        }
+      },
+      "components": {
+        "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 4
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 5
+          },
+          "minecraft:friction": 0.4,
+          "minecraft:map_color": "#ffffff",
+          "minecraft:light_dampening": 15,
+          "minecraft:light_emission": 0,
+          "minecraft:on_interact": {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'mcplus:unpure_fluorite_ingot')",
+            "event": "mcplus:purification"
+          }
+      },
+      "events": {
+        "mcplus:purification":{
+            "transform_item": {
+                "transform": "mcplus:fluorite_ingot"
+            }
+        }
+    }
+    }
+  }
+  

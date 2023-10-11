@@ -31,5 +31,9 @@
     "mcplus:random_ore": {
         "textures": "random_ore",
         "sound": "stone"
+    },
+    "mcplus:purifier": {
+        "textures": "purifier",
+        "sound": "stone"
     }
 }

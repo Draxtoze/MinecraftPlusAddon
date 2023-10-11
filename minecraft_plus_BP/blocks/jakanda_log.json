@@ -41,6 +41,7 @@
 		],
 		"components": {
 			"tag:mcplus:jakanda_log": {},
+			"tag:log": {},
 			"minecraft:creative_category": {
 				"category": "nature",
 				"group": "itemGroup.name.log"
@@ -66,7 +67,7 @@
 		},
 		"events": {
 			"mcplus:set_facing_direction": {
-				"set_block_property": {
+				"set_block_state": {
 					"mcplus:facing_direction": "math.floor( query.block_face / 2.0 )"
 				}
 			},
