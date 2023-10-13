@@ -1,0 +1,199 @@
+{
+    "format_version": "1.19.60",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "mcplus:ancient_priest",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": true
+        },
+        "component_groups": {
+            "mad": {
+                "minecraft:behavior.melee_attack": {
+                    "priority": 3,
+                    "melee_fov": 90.0,
+                    "speed_multiplier": 1,
+                    "track_target": false,
+                    "require_complete_path": true
+                },
+                "minecraft:angry": {
+                    "broadcast_anger": true,
+                    "broadcast_range": 20,
+                    "broadcast_targets": [
+                        "ancient_priest"
+                    ],
+                    "angry_sound": "angry",
+                    "broadcast_anger_on_attack": false,
+                    "broadcast_anger_on_being_attacked": false,
+                    "duration": 30,
+                    "duration_delta": 0,
+                    "calm_event": {
+                        "event": "calming_event",
+                        "target": "self"
+                    }
+                },
+                "minecraft:attack": {
+                    "damage": 3
+                },
+                "minecraft:target_nearby_sensor": {
+                    "must_see": false,
+                    "inside_range": 1,
+                    "outside_range": 10
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "must_see": true,
+                    "reselect_targets": true,
+                    "within_radius": 25.0,
+                    "must_see_forget_duration": 17.0,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            "max_dist": 48.0
+                        }
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "gold_ingot"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "barter": true,
+                        "admire": true,
+                        "use_item": true,
+                        "cooldown_after_being_attacked": 5,
+                        "interact_text": "action.interact.barter"
+                    }
+                ]
+            },
+            "minecraft:equip_item": {
+            },
+            "minecraft:admire_item": {
+              "duration": 8,
+              "cooldown_after_being_attacked": 20
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                  {
+                    "filters": {
+                      "test": "in_lava",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": true
+                    },
+                    "cause": "lava",
+                    "damage_per_tick": 4
+                  }
+                ]
+              },
+              "minecraft:behavior.barter": {
+                "priority": 3
+              },
+            "minecraft:inventory": {
+                "additional_slots_per_strength": 0,
+                "can_be_siphoned_from": false,
+                "container_type": "inventory",
+                "inventory_size": 3,
+                "private": false,
+                "restrict_to_owner": false
+            },
+            "minecraft:collision_box": {
+                "height": 1.9,
+                "width": 0.6
+            },
+            "minecraft:health": {
+                "value": 15,
+                "max": 15
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "ancient_priest",
+                    "mob"
+                ]
+            },
+            "minecraft:barter": {
+                "barter_table": "loot_tables/entities/ancient_priest_trades.json",
+                "cooldown_after_being_attacked": 5
+            },
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:navigation.walk": {
+                "is_amphibious": true,
+                "can_path_over_water": true,
+                "can_pass_doors": true,
+                "can_open_doors": true,
+                "can_walk": true,
+                "avoid_water": true,
+                "can_jump": true
+            },
+            "minecraft:annotation.open_door": {},
+            "minecraft:movement.basic": {},
+            "minecraft:behavior.random_stroll": {
+                "priority": 11,
+                "speed_multiplier": 0.6
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 12,
+                "look_distance": 8,
+                "probability": 0.02
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:block_sensor": {
+                "sensor_radius": 16,
+                "on_break": [
+                    {
+                        "block_list": [
+                            "minecraft:gold_block"
+                        ],
+                        "on_block_broken": "purifier_destroyed"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "purifier_destroyed": {
+                "add": {
+                    "component_groups": [
+                        "mad"
+                    ]
+                }
+            },
+            "calming_event": {
+                "remove": {
+                    "component_groups": [
+                        "mad"
+                    ]
+                }
+            }
+        }
+    }
+}

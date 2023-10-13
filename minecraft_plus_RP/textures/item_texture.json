@@ -88,6 +88,12 @@
 		},
 		"calcium": {
 			"textures": "textures/items/calcium"
+		},
+		"unpure_fluorite_ingot": {
+			"textures": "textures/items/unpure_fluorite_ingot"
+		},
+		"ancient_bronze_coin":{
+			"textures": "textures/items/ancient_bronze_coin"
 		}
 	}	
 }

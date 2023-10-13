@@ -27,9 +27,21 @@
       },
       "events": {
         "mcplus:purification":{
-            "transform_item": {
-                "transform": "mcplus:fluorite_ingot"
-            }
+            "sequence": [
+              {
+                "decrement_stack": {
+                  "ignore_game_mode": true
+                }
+              },
+              {
+                "spawn_loot": {
+                  "table": "loot_tables/blocks/purifier.json"
+                }
+                
+              }
+            ]
+
+            
         }
     }
     }

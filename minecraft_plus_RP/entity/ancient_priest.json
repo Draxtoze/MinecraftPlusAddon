@@ -1,0 +1,32 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "mcplus:ancient_priest",
+        "min_engine_version": "1.8.0",
+        "materials": {
+          "default": "villager"
+        },
+        "textures": {
+          "default": "textures/entity/ancient_priest"
+        },
+        "geometry": {
+          "default": "geometry.ancient_priest"
+        },
+        "animations": {
+          "general": "animation.villager.general",
+          "look_at_target": "animation.common.look_at_target",
+          "move": "animation.villager.move"
+        },
+        "animation_controllers": [
+          { "general": "controller.animation.villager.general" },
+          { "move": "controller.animation.villager.move" }
+        ],
+        "render_controllers": [ "controller.render.ancient_priest" ],
+        "spawn_egg": {
+          "base_color": "#292929",
+          "overlay_color": "#04a11c"
+        }
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+
+{
+	"format_version": "1.20.30",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "mcplus:ancient_church_f_rule",
+			"places_feature": "mcplus:ancient_church"
+		},
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						  },
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "sunflower_plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "ice_plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "savana"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+            "scatter_chance": 0.17,
+			"x": -16,
+			"y": "query.heightmap(variable.worldx, variable.worldz) - 7",
+			"z": -16
+		}
+	}
+}
