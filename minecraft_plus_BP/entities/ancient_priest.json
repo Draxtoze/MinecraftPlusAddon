@@ -69,7 +69,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "ancient_bronze_coin"
+                                        "value": "mcplus:ancient_bronze_coin"
                                     },
                                     {
                                         "test": "is_family",
