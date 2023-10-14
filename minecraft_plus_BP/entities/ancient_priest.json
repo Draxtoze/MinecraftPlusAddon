@@ -69,7 +69,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "gold_ingot"
+                                        "value": "ancient_bronze_coin"
                                     },
                                     {
                                         "test": "is_family",
@@ -172,7 +172,7 @@
                 "on_break": [
                     {
                         "block_list": [
-                            "minecraft:gold_block"
+                            "mcplus:purifier"
                         ],
                         "on_block_broken": "purifier_destroyed"
                     }
