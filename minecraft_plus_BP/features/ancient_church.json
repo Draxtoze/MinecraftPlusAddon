@@ -1,29 +1,15 @@
 {
-	"format_version": "1.20.30",
+	"format_version": "1.13.0",
 	"minecraft:structure_template_feature": {
 		"description": {
 			"identifier": "mcplus:ancient_church"
 		},
-		"structure_name": "mcplus:ancient_church",
+		"structure_name": "mystructure:ancient_church",
 		"adjustment_radius": 0,
-		"facing_direction": "random",
+		"facing_direction": "south",
 		"constraints": {
 			"grounded": {},
-			"unburied": {},
-			"block_intersection": {
-				"block_allowlist": [
-					"minecraft:air",
-                    "minecraft:stone",
-                    "minecraft:oak_log",
-                    "minecraft:leaves",
-                    "minecraft:dark_oak_log",
-                    "minecraft:spruce_log",
-                    "minecraft:dirt",
-                    "minecraft:grass",
-                    "minecraft:double_plant",
-                    "minecraft:tallgrass"
-				]
-			}
+			"unburied": {}
 		}
 	}
 }
