@@ -21,7 +21,29 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "mcplus:bronze_ingot",
+                    "name": "minecraft:raw_copper",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:raw_gold",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
                     "weight": 3,
                     "functions": [
                         {
@@ -33,7 +55,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:aluminium",
-                    "weight": 2,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -44,7 +66,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:calcium",
-                    "weight": 1,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -55,7 +77,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:fluor",
-                    "weight": 2,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -66,7 +88,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:magnesium",
-                    "weight": 2,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -77,7 +99,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:samarium",
-                    "weight": 1,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -88,7 +110,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:silicium",
-                    "weight": 2,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -99,7 +121,7 @@
                 {
                     "type": "item",
                     "name": "mcplus:yttrium",
-                    "weight": 2,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
@@ -110,7 +132,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:iron_nugget",
-                    "weight": 5,
+                    "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
@@ -121,7 +143,7 @@
                 {
                     "type": "item",
                     "name": "minecraft:stone",
-                    "weight": 10,
+                    "weight": 20,
                     "functions": [
                         {
                             "function": "set_count",

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "mcplus:random_ore"
+		},
+		"count": 9, 
+		"replace_rules": [
+			{
+				
+				"places_block": "mcplus:random_ore",
+				"may_replace": ["minecraft:stone"]
+			},
+			{
+				
+				"places_block": "mcplus:deepslate_random_ore",
+				"may_replace": ["minecraft:deepslate"]
+			}
+		]
+	}
+}

@@ -38,6 +38,8 @@ tile.mcplus:jakanda_stripped_log.name=Bois de Jakanda écorcé
 tile.mcplus:jakanda_leaves.name=Feuilles de Jakanda
 tile.mcplus:random_ore.name=Random Ore
 tile.mcplus:purifier.name=Purificateur
+tile.mcplus:deepslate_bronze_ore.name=Minerais de Bronze des abimes
+tile.mcplus:deepslate_random_ore.name=Random ore des abimes
 ## Entities
 entity.mcplus:ancient_priest.name=Ancient Prêtre
 item.spawn_egg.entity.mcplus:ancient_priest.name=Oeuf de Spawn d'ancient prêtre

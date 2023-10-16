@@ -1567,7 +1567,7 @@
 			},
 			"minecraft:display_name": {},
 			"minecraft:durability": {
-				"max_durability": 1000
+				"max_durability": 6
 			},
 			"minecraft:icon": {
 				"texture": "fluorite_pickaxe"
@@ -1579,14 +1579,30 @@
 				"on_hurt_entity": {
 					"event": "mcplus:durability"
 				}
+			},
+			"minecraft:on_use_on": {
+				"on_use_on": {
+					"event": "mcplus:upgrade",
+					"target": "block"
+				}
 			}
 		},
 		"events": {
 			"mcplus:durability": {
-				"damage": {
-					"type": "durability",
-					"amount": 1
-				}
+				"sequence": [
+					{
+						"condition": "query.remaining_durability== 1",
+						"transform_item":{
+							"transform": "minecraft:iron_sword"
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 1
+						}
+					}
+				]
 			}
 		}
 	}

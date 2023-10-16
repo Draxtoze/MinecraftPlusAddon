@@ -35,5 +35,13 @@
     "mcplus:purifier": {
         "textures": "purifier",
         "sound": "stone"
+    },
+    "mcplus:deepslate_bronze_ore": {
+        "textures": "deepslate_bronze_ore",
+        "sound": "stone"
+    },
+    "mcplus:deepslate_random_ore":{
+        "textures": "deepslate_random_ore",
+        "sound": "stone"
     }
 }

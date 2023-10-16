@@ -33,6 +33,12 @@
 		},
 		"purifier": {
 			"textures": "textures/blocks/purifier"
+		},
+		"deepslate_bronze_ore":{
+			"textures": "textures/blocks/deepslate_bronze_ore"
+		},
+		"deepslate_random_ore":{
+			"textures": "textures/blocks/deepslate_random_ore"
 		}
     }
 }

@@ -3,8 +3,8 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "mcplus:ancient_church_f_rule",
-			"places_feature": "mcplus:ancient_church"
+			"identifier": "mcplus:desert_ruins_f_rule",
+			"places_feature": "mcplus:desert_ruins"
 		},
 		"conditions": {
 			"placement_pass": "final_pass",
@@ -15,23 +15,18 @@
 						{
 							"test": "has_biome_tag",
 							"operator": "==",
-							"value": "plains"
-						},
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "forest"
-						}
+							"value": "desert"
+                        }
 					]
 				}
 			]
 		},
 		"distribution": {
-			"iterations": 1,
-			"scatter_chance":"(0.17)",
+			"iterations": 5,
+			"scatter_chance":"(0.50)",
 			"coordinate_eval_order": "xzy",
 			"x": -16,
-			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"y": "query.heightmap(variable.worldx, variable.worldz) - 3",
 			"z": -16
 		}
 	}
